@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-family: "Poppins", sans-serif;
+
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: var(--font-family);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+
+/* header */
+header {
+  width: 100%;
+  background: url(header-bg.jpg) no-repeat center center/cover;
+  height: 60vh;
+
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 3.4rem 3.4rem 8.4rem rgba(0, 0, 0, 0.3),
+    inset -3.4rem -3.4rem 8.4rem rgba(0, 0, 0, 0.3);
+}
+
+header::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 0.3rem;
+  width: 100%;
+  background-color: sandybrown;
+}
+
+/* form header */
+#form-search {
+  width: 50%;
+}
+
+#form-search input {
+  width: 100%;
+  padding: 2rem;
+  color: #777;
+  font-size: 2.8rem;
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+  box-shadow: 0.2rem 0.2rem 3.5rem rgba(0, 0, 0, 0.2);
+}
+
+#result {
+  padding-top: 2rem;
+  width: 100%;
+  background-color: #fffffb;
+}
+
+.result__card {
+  text-align: center;
+  width: auto;
+}
